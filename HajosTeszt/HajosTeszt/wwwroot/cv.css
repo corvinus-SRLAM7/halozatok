@@ -1,0 +1,70 @@
+﻿h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #E06E00;
+    font-weight: 800;
+}
+body {
+    background-color: #DED377;
+}
+h2 {text-align: center;
+    line-height: 1,5em
+}
+
+h3.alapadatok {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+    width: 190px;
+    background-color: #EDECC3;
+    font-weight: 800;
+    font-size: 30px;
+    color: #E08B00;
+    font-variant: small-caps;
+}
+
+h3.tanulmanyok {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+    width: 210px;
+    background-color: #EDECC3;
+    font-weight: 800;
+    font-size: 30px;
+    color: #E08B00;
+    font-variant: small-caps;
+}
+
+h3.tapasztalat {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+    width: 270px;
+    background-color: #EDECC3;
+    font-weight: 800;
+    font-size: 30px;
+    color: #E08B00;
+    font-variant: small-caps;
+}
+
+ul.negyzet{list-style-type: square}
+
+p.dolt {font-style: italic;
+        line-height: 35px;
+        padding-left: 40px
+}
+
+ol, ul {font-size: 18px}
+
+a:link {
+    font-style: italic;
+    color: #CE2700
+}
+
+a:visited {
+    font-style: italic;
+    color: #CF6B53
+}
+
+span.felkover{font-weight: bold}

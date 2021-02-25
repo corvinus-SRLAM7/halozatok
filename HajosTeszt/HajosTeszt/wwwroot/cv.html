@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="cv.css"
     <meta charset="utf-8" />
     <title></title>
 </head>
@@ -10,25 +11,30 @@
 </h1>
 
 <h2>
+    <p>
+        <img src="cv.png" width="200" height="200" alt="arckép">
+    </p>
     Suller Zoltán
 </h2>
-<a href="#tanulmanyok">Tanulmányok</a>
-<h3>
-    <p>
-        Alap adatok:
-    </p>
-</h3>
-    <p>
-        <span>
-            email-cím: sullerzoltan@email.com <br>
-            telefonszám: 06771111111<br>
-            lakcím: Királyvár, Robert Baratheon utca 7.<br>
-        </span>
-    </p>
 
-<h3>
+<p>
+    <a href="#tanulmanyok">Tanulmányok</a>
+</p>
+
+<h3 class="alapadatok">
+        Alap adatok:
+</h3>
+<p class="dolt">
+    <span class="felkover">email-cím:</span> sullerzoltan@email.com <br>
+    <span class="felkover">telefonszám:</span> 06771111111<br>
+    <span class="felkover">lakcím:</span> Királyvár, Robert Baratheon utca 7.<br>
+</p>
+
+<h3 class="tanulmanyok">
     <a id="tanulmanyok">Tanulmányok:</a>
 </h3>
+
+<p>
     <ol>
         <li>Általános iskola: Ady Endre ÁMK</li>
         <br>
@@ -37,11 +43,15 @@
         <li>Egyetem: Budapesti Corvinus Egyetem</li>
         <br>
     </ol>
-<h3>
+</p>
+
+<h3 class="tapasztalat">
     Munkatapasztalat:
 </h3>
-<div>
-        <ul>
+
+<p>
+    <div>
+        <ul class="negyzet">
             <li>
                 Bolti eladó - Spar
             </li>
@@ -51,12 +61,10 @@
             </li>
             <br>
         </ul>
-</div>
-
-
-<p>
-    <img src="cv.png" alt="arckép">
+    </div>
 </p>
+
+
 
 </body>
 </html>
