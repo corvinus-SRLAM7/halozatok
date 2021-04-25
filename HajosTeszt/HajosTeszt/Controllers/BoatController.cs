@@ -17,7 +17,11 @@ namespace EmptyBoat.Controllers
         public ActionResult M1()
         {
             HajostesztContext context = new HajostesztContext();
-            var kérdések = from x in context.Questions select x.QuestionText;
+            var kérdés = (from x in context.Questions
+                          where x.QuestionId == sorszám
+                          select x).FirstOrDefault();
+
+            if (kérdés == null) return BadRequest("Nincs ilyen sorszámú kérdés");
 
             return new JsonResult(kérdések);
         }
