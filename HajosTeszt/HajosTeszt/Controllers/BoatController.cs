@@ -6,15 +6,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EmptyBoat.Controllers
+namespace HajosTeszt.Controllers
 {
     //[Route("api/[controller]")]
     [ApiController]
     public class BoatController : ControllerBase
     {
         [HttpGet]
-        [Route("questions/all")]
+        [Route("questions/{sorszám}")]
+        //[Route("questions/all")]
         public ActionResult M1()
+        {
+            HajostesztContext context = new HajostesztContext();
+            var kérdések = from x in context.Questions select x.QuestionText;
+
+            return new JsonResult(kérdések);
+        }
+
+        public ActionResult M2(int sorszám)
         {
             HajostesztContext context = new HajostesztContext();
             var kérdés = (from x in context.Questions
@@ -23,7 +32,7 @@ namespace EmptyBoat.Controllers
 
             if (kérdés == null) return BadRequest("Nincs ilyen sorszámú kérdés");
 
-            return new JsonResult(kérdések);
+            return new JsonResult(kérdés);
         }
     }
 }
